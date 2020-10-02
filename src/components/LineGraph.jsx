@@ -3,7 +3,8 @@ import {Line} from 'react-chartjs-2'
 
 const LineGraph = (props) => {
     return (<>
-       <div style={{width:'600px',height:'600px',margin:'50px auto'}}>
+       <div className='row container-fluid'>
+       <div className='col-md-10 mx-auto mt-5'>
        <Line data={{
             labels: props.label.map(l=>l.substr(0,10)),
             datasets: [
@@ -30,6 +31,7 @@ const LineGraph = (props) => {
                 }
             ]
         }} />
+        </div>
        </div>
     </>)
 }

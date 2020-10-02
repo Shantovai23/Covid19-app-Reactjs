@@ -2,7 +2,7 @@
 
 body{
   font-family: sans-serif;
-  line-height: 32px;
+  line-height: 20px;
   font-family: 'Mulish', sans-serif;
 }
 
@@ -25,10 +25,10 @@ h1{
 }
 .card{
   margin: 35px 0;
-  margin-left: 20px;
+
   transition: 0.3s;
   box-shadow: 0px 30px 18px  -8px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05,1.05);
+  transform: scale(1.05,1.05);
   background-color: #ff634d;
   color: #fff;
   font-weight: 900;
