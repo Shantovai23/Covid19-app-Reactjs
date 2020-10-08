@@ -38,7 +38,6 @@ function App() {
       })
   }, [])
 
-
   const formatDate = (date) => {
     const d = new Date(date)
     const year = d.getFullYear()
@@ -46,7 +45,6 @@ function App() {
     const _date = `0${d.getDate()}`.slice(-2)
     return `${year}-${month}-${_date}`
   }
-
 
   const getCoronaReportbyDateRange = (countryslug, from, to) => {
     axios.get(`/country/${countryslug}/status/confirmed?from=${from}T00:00:00Z&to=${to}T00:00:00Z`)
@@ -90,7 +88,6 @@ function App() {
     return (<><div className="loader"></div><h5>Loading...</h5></>)
   }
 
-
   return (
     <div className="App">
       <CovidSummary
@@ -121,5 +118,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
