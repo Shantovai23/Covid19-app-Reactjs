@@ -87,7 +87,6 @@ function App() {
   if (loading) {
     return (<><div className="loader"></div><h5>Loading...</h5></>)
   }
-
   return (
     <div className="App">
       <CovidSummary
