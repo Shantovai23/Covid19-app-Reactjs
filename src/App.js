@@ -83,7 +83,6 @@ function App() {
     getCoronaReportbyDateRange(country, from, to)
     setDays(e.target.value)
   }
-
   if (loading) {
     return (<><div className="loader"></div><h5>Loading...</h5></>)
   }
@@ -105,9 +104,9 @@ function App() {
           )}
         </select>
         <select value={days} onChange={daysHandler}>
-          <option value='7'>Last 7 days graph data</option>
-          <option value='30'>Last 30 days graph data</option>
-          <option value='90'>Last 90 days graph data</option>
+          <option value='7'>Last 7 Days Graph Data</option>
+          <option value='30'>Last 30 Days Graph Data</option>
+          <option value='90'>Last 90 Days Graph Data</option>
         </select>
       </div>
       <div className='screen'>
